@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- ? Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- ? Required meta tags -->
+
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/aos-anmite.css" />
+    <!-- ? Main CSS -->
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/hover-min.css" />
+    <link rel="stylesheet" href="css/data-tabel.css">
+    <!-- ? Custom CSS -->
+    <!-- ? Main JavaScript -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+
+    <!-- ? Main JavaScript -->
+
+    <!-- ? Custom JavaScript -->
+    <script src="js/aos-anmite.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/data-tabel.js"></script>
+    <!-- ? Custom JavaScript -->
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+    <!-- boxicons -->
+    <!-- ? Title -->
+    <title>dashboard</title>
+    <!-- ? Title -->
+    <!-- ? Favicon -->
+    <link rel="icon" href="media/image/logo.png" type="image" />
+    <!-- ? Favicon -->
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-4 col-sm-12 ">
+                    <div class="sidebar">
+                        <div class="logo-content">
+                            <div class="logo">
+                                <i class="bx bxl-c-plus-plus"></i>
+                                <div class="logo-name fw-bold">CodingLab</div>
+                            </div>
+                            <i class='bx bx-menu' id="btn"></i>
+                        </div>
+                        <ul class="nav-list">
+                            <li data-bs-toggle="tooltip" data-bs-placement="right" title="search">
+                                <i class='bx bx-search'></i>
+                                <input type="text" placeholder="search...">
+                            </li>
+                            <li data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard">
+                                <a href="#">
+                                    <i class='bx bx-grid-alt'></i>
+                                    <span class="links-name">Dashboard</span>
+                                </a>
+                            </li>
+    
+                            <li data-bs-toggle="tooltip" data-bs-placement="right" title="User">
+                                <a href="#">
+                                    <i class='bx bx-user'></i>
+                                    <span class="links-name">User</span>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="tooltip" data-bs-placement="right" title="Chat">
+                                <a href="#">
+                                    <i class='bx bx-chat'></i>
+                                    <span class="links-name">Chat</span>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="tooltip" data-bs-placement="right" title="Analytics">
+                                <a href="chart.html">
+                                    <i class='bx bxs-pie-chart-alt'></i>
+                                    <span class="links-name">Analytics</span>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="tooltip" data-bs-placement="right" title="File Manager">
+                                <a href="#">
+                                    <i class='bx bx-folder'></i>
+                                    <span class="links-name">File Manager</span>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="tooltip" data-bs-placement="right" title="order">
+                                <a href="#">
+                                    <i class='bx bx-cart'></i>
+                                    <span class="links-name">order</span>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="tooltip" data-bs-placement="right" title="Saved">
+                                <a href="#">
+                                    <i class='bx bx-heart'></i>
+                                    <span class="links-name">Saved</span>
+                                </a>
+                            </li>
+                            <li data-bs-toggle="tooltip" data-bs-placement="right" title="Setting">
+                                <a href="#">
+                                    <i class='bx bx-cog'></i>
+                                    <span class="links-name">Setting</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="profile-content text-primary text-center">
+                            <div class="profile">
+                                <div class=" profile-detials">
+                                    <img src="./image/WhatsApp Image 2021-07-19 at 3.49.16 AM.jpeg" alt="">
+                                    <div class="name-job">
+                                        <div class="name fw-bold"> Ali Ali</div>
+                                        <div class="job fw-light">Front-End</div>
+                                    </div>
+                                </div>
+                                <i class='bx bx-log-out' id="log-out"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-8 col-sm-12">
+                    <div class="chart">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        //gradient-fill 
+
+        let grediant = ctx.createLinearGradient(0, 0, 0, 400);
+        grediant.addColorStop(0, 'rgba(58,123,213,1)');
+        grediant.addColorStop(1, 'rgba(0,210,255,.3)');
+        let delayed;
+
+
+        const labels = [
+            '2015',
+            '2016',
+            '2017',
+            '2018',
+            '2019',
+            '2020',
+            '2021',
+        ]
+        const data = {
+            labels,
+            datasets: [{
+                data: [
+                    211, 326, 165, 350, 420, 370, 451
+                ],
+                label: 'Our Sales',
+                fill: true,
+                backgroundColor: grediant,
+                borderColor: '#ccc',
+                pointBackgroundColor: '#ddd',
+                tension: .2
+            },
+            ],
+        };
+        const config = {
+            type: 'line',
+            data: data,
+            options: {
+                animation: {
+                    onComplete: () => {
+                        delayed = true;
+                    },
+                    delay: (context) => {
+                        let delay = 0;
+                        if (context.type === 'data' && context.mode === 'default' && !delayed) {
+                            delay = context.dataIndex * 400 + context.datasetIndex * 100;
+                        }
+                        return delay;
+                    },
+                },
+                radius: 5,
+                hitRadius: 30,
+                hoverRadius: 12,
+                responsive: true,
+                scales: {
+                    y: {
+                        ticks: {
+                            callback: function (value) {
+                                return '$' + value + 'M';
+                            },
+                        },
+                    },
+                },
+            },
+        };
+        const myChart = new Chart(ctx, config);
+    </script>
+        <script src="js/main.js"></script>
+
+</body>
+
+</html>

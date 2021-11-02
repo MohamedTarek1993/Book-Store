@@ -1,10 +1,12 @@
 //custom color
 $primary: #c29938;
 $light: #fbf5e5;
+$tooltip-color :#c29938;
 
 //import the function & variables
 @import "../node_modules/bootstrap/scss/_functions";
 @import "../node_modules/bootstrap/scss/_variables";
+@import "../node_modules/bootstrap/scss/tooltip";
 
 $custom-theme-colors: (
   "altlight": #f2ebfa,

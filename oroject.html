@@ -18,21 +18,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/hover-min.css" />
+    <link rel="stylesheet" href="css/data-tabel.css">
     <!-- ? Custom CSS -->
     <!-- ? Main JavaScript -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/fontawesome.min.js"></script>
-    <script src="js/aos-anmite.js"></script>
-    <!-- ? Main JavaScript -->
-    <!-- ? Custom JavaScript -->
-    <!-- ? Custom JavaScript -->
-    <script src="js/swiper-bundle.min.js"></script>
-    <!-- ? Custom JavaScript -->
 
+    <!-- ? Main JavaScript -->
+
+    <!-- ? Custom JavaScript -->
+    <script src="js/aos-anmite.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/data-tabel.js"></script>
+    <!-- ? Custom JavaScript -->
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+    <!-- boxicons -->
     <!-- ? Title -->
-    <title>pro</title>
+    <title>dashboard</title>
     <!-- ? Title -->
     <!-- ? Favicon -->
     <link rel="icon" href="media/image/logo.png" type="image" />
@@ -40,580 +46,622 @@
 </head>
 
 <body>
-    <!---------------------- start scroll-up -------------------------------------------->
-    <a id="button" class="scroll-up"><i class="fas fa-arrow-up"></i></a>
-    <!---------------------- finish scroll-up -------------------------------------------->
-    <!---------------------- navbar -------------------------------------------->
-    <nav class="navbar navbar-expand-md navbar-dark  fixed-top ">
-        <div class="container">
-            <a href="#intro" class="navbar-brand">
-                <img src="./image/logo.png" alt="logo">
-            </a>
-            <!-- toggle button for mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-                <!-- nav links -->
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-muted fw-bold display-10 animate" href="#topics">About The Book</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-muted fw-bold display-10 animate" href="#reviews">Reviews</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link fw-bold text-muted display-10 animate" href="#pricing">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-muted fw-bold display-10 animate" href="#contact">Get in Touch</a>
-                    </li>
-
-                    <li class="nav-item ms-2 d-none d-md-inline pt-2">
-                        <a class="btn btn-secondary" href="#pricing">Buy Now</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!---------------------- navbar-------------------------------------------->
-    <!---------------------- start landing page -------------------------------------------->
-    <section class="header">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./image/img1.png" class="d-block w-100" alt="First Slide">
-                    <div class="carousel-caption ">
-
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./image/image1.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption ">
-
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./image/image4.jfif" class="d-block w-100" alt="...">
-                    <div class="carousel-caption ">
-
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-    <!---------------------- finish  landing page -------------------------------------------->
-    <!---------------------- intro -------------------------------------------->
-    <section id="intro" class="bg-light py-4" data-aos="fade-up" data-aos-duration="3000">
-        <div class="container-lg  pt-5">
-            <div class="row justify-content-center ">
-                <div class="col-md-5 text-center text-md-start">
-                    <h1>
-                        <div class="display-2">Black Velt</div>
-                        <div class="display-5 text-muted">Your Coding Skills</div>
-                    </h1>
-                    <p class="p-3 lead text-muted ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi,
-                        aut dicta numquam a praesentium consectetur voluptatem labore, mollitia non ratione ullam?
-                        Doloribus esse architecto repudiandae alias similique maxime in debitis.</p>
-                    <a href="#" class="btn btn-secondary btn-lg">Buy Now</a>
-                    <!-- open offcanvas -->
-                    <a href="#sidebar" class="  btn-lg btn btn-primary  " data-bs-toggle="offcanvas" role="button"
-                        aria-controls="sidebar">
-                        Explor Other Books
-                    </a>
-                    <!-- open offcanvas -->
-                </div>
-                <div class="col-md-5 text-center d-none d-md-block">
-                    <img src="image/awa1.jpg" alt="cover" class="img-fluid">
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!---------------------- intro -------------------------------------------->
-    <!---------------------- pricing -tables -------------------------------------------->
-    <section id="pricing" class="bg-altlight my-5 py-3">
-        <div class="container-lg">
-            <div class="text-center">
-                <h2 class="pt-3"> <i class="bi bi-cash-coin"></i>
-                    Pricing Plane</h2>
-                <p class="lead text-muted pb-4">Choose a Pricing Plan To Suit You</p>
-            </div>
-            <div class="row my-3 justify-content-center align-items-center g-0 ">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card border-secondary border">
-                        <div class="card-body text-center py-4">
-                            <h4 card-title>Starter Edition</h4>
-                            <p class="lead card-subtitle">eBook Download</p>
-                            <p class="display-5 my-4 text-primary fw-bold">12.85$</p>
-                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet
-                                consectetur adipisicing elit. Reiciendis eum dolores esse, sequi iure totam soluta
-                                molestias eligendi consectetur adipisci officiis laudantium optio eius quidem
-                                perferendis labore ducimus exercitationem rem?</p>
-                            <a href="#" class="btn btn-outline-primary btn-lg -mt-4">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 g-3">
-                    <div class="card border-secondary border-1 my-2   active-price">
-                        <div class="card-body text-center py-4">
-                            <div class="card-header text-center text-primary fw-bold mb-4">Most Popular</div>
-                            <h4 card-title>Complete Edition</h4>
-                            <p class="lead card-subtitle">eBook Download</p>
-                            <p class="display-5 my-4 text-primary fw-bold">20.85$</p>
-                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet
-                                consectetur adipisicing elit. Reiciendis eum dolores esse, sequi iure totam soluta
-                                molestias eligendi consectetur adipisci officiis laudantium optio eius quidem
-                                perferendis labore ducimus exercitationem rem?</p>
-                            <a href="#" class="btn btn-outline-primary btn-lg -mt-4">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card border-secondary border">
-                        <div class="card-body text-center py-4">
-                            <h4 card-title>Ultimate Edition</h4>
-                            <p class="lead card-subtitle">eBook Download</p>
-                            <p class="display-5 my-4 text-primary fw-bold">40.85$</p>
-                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet
-                                consectetur adipisicing elit. Reiciendis eum dolores esse, sequi iure totam soluta
-                                molestias eligendi consectetur adipisci officiis laudantium optio eius quidem
-                                perferendis labore ducimus exercitationem rem?</p>
-                            <a href="#" class="btn btn-outline-primary btn-lg -mt-4">Book Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!---------------------- pricing -tables -------------------------------------------->
-    <!---------------------- topic -------------------------------------------->
-    <section id="topics" class="py-5 bg-secondary" data-aos="fade-up" data-aos-duration="3000">
-        <div class="container-md">
-            <div class="text-center">
-                <h2>Insie The Book</h2>
-                <p class="lead text-white my-0">A quick at the topic you will learn</p>
-            </div>
-            <div class="row my-2 g-5 justify-content-around align-items-center">
-                <div class="col-6 col-lg-4">
-                    <img src="./image/image1.png" alt="" class="img-fluid ">
-                </div>
-                <!-- accordation -->
-                <div class="col-6 col-lg-8">
-                    <div class="accordion" id="chapters">
-                        <!-- first content -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading-1">
-                                <button class="accordion-button" type="button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
-                                    Ch1- Your First Web Page
-                                </button>
-                            </h2>
-                            <div id="chapter-1" class="accordion-collapse collapse " aria-labelledby="heading-1"
-                                data-bs-parent="#chapters">
-                                <div class="accordion-body">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem cumque quis
-                                        unde
-                                        consequatur at blanditiis, atque nesciunt id sit veritatis assumenda ea earum
-                                        repudiandae officia iusto harum sed praesentium eaque.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- first content -->
-                        <!-- second content -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading-2">
-                                <button class="accordion-button" type="button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#chapter-2" aria-expanded="true" aria-controls="chapter-2">
-                                    Ch2- Your Second Web Page
-                                </button>
-                            </h2>
-                            <div id="chapter-2" class="accordion-collapse collapse " aria-labelledby="heading-2"
-                                data-bs-parent="#chapters">
-                                <div class="accordion-body">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem cumque quis
-                                        unde
-                                        consequatur at blanditiis, atque nesciunt id sit veritatis assumenda ea earum
-                                        repudiandae officia iusto harum sed praesentium eaque.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- second content -->
-                        <!-- third content -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading-3">
-                                <button class="accordion-button" type="button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#chapter-3" aria-expanded="true" aria-controls="chapter-3">
-                                    Ch3- Your third Web Page
-                                </button>
-                            </h2>
-                            <div id="chapter-3" class="accordion-collapse collapse " aria-labelledby="heading-3"
-                                data-bs-parent="#chapters">
-                                <div class="accordion-body">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem cumque quis
-                                        unde
-                                        consequatur at blanditiis, atque nesciunt id sit veritatis assumenda ea earum
-                                        repudiandae officia iusto harum sed praesentium eaque.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- third content -->
-                        <!-- fourth content -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading-4">
-                                <button class="accordion-button" type="button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#chapter-4" aria-expanded="true" aria-controls="chapter-4">
-                                    Ch4- Your Fourth Web Page
-                                </button>
-                            </h2>
-                            <div id="chapter-4" class="accordion-collapse collapse " aria-labelledby="heading-4"
-                                data-bs-parent="#chapters">
-                                <div class="accordion-body">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem cumque quis
-                                        unde
-                                        consequatur at blanditiis, atque nesciunt id sit veritatis assumenda ea earum
-                                        repudiandae officia iusto harum sed praesentium eaque.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- fourth content -->
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!---------------------- topic -------------------------------------------->
-    <!---------------------- review -------------------------------------------->
-    <section id="review" class="bg-light py-5">
-        <div class="container-lg">
-            <div class="text-center">
-                <h2> <i class="bi bi-stars"></i>Book Reviews</h2>
-                <p class="lead"> What My Student Have Said About The Book</p>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="list-group">
-                        <div class="list-group-item py-3 mb-3">
-                            <div>
-                                <i class="bi bi-star-fill text-primary"></i>
-                                <i class="bi bi-star-fill text-primary"></i>
-                                <i class="bi bi-star-fill text-primary"></i>
-                                <i class="bi bi-star-fill text-primary"></i>
-                                <i class="bi bi-star-half text-primary"></i>
-                            </div>
-                            <h5 class="mb-1 "> A must buy for every devolper</h5>
-                            <p class="mb-1 lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-                                facilis.
-                                Beatae corporis ducimus tempora culpa aliquid illo error natus aspernatur placeat velit,
-                                dolores cumque temporibus eos nemo optio sed doloribus!</p>
-                            <small>Review By Ehab Ehab</small>
-                        </div>
-                        <div class="list-group-item py-3">
-                            <div>
-                                <i class="bi bi-star-fill text-primary"></i>
-                                <i class="bi bi-star-fill text-primary"></i>
-                                <i class="bi bi-star-fill text-primary"></i>
-                                <i class="bi bi-star text-primary"></i>
-                                <i class="bi bi-star text-primary"></i>
-                            </div>
-                            <h5 class="mb-1"> A must buy for every devolper</h5>
-                            <p class="mb-1 lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-                                facilis.
-                                Beatae corporis ducimus tempora culpa aliquid illo error natus aspernatur placeat velit,
-                                dolores cumque temporibus eos nemo optio sed doloribus!</p>
-                            <small>Review By Ehab Ehab</small>
-                        </div>
-                        <div class="list-group-item py-3">
-                            <div>
-                                <i class="bi bi-star-fill text-primary"></i>
-                                <i class="bi bi-star-fill text-primary"></i>
-                                <i class="bi bi-star text-primary"></i>
-                                <i class="bi bi-star text-primary"></i>
-                                <i class="bi bi-star text-primary"></i>
-                            </div>
-                            <h5 class="mb-1"> A must buy for every devolper</h5>
-                            <p class="mb-1 lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-                                facilis.
-                                Beatae corporis ducimus tempora culpa aliquid illo error natus aspernatur placeat velit,
-                                dolores cumque temporibus eos nemo optio sed doloribus!</p>
-                            <small>Review By Ehab Ehab</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!---------------------- review -------------------------------------------->
-    <!---------------------- contact form -------------------------------------------->
-    <div id="contact " class="my-4" data-aos="fade-up" data-aos-duration="3000">
-        <div class="container-lg">
-            <div class="text-center">
-                <h2> <i class="bi bi-geo-alt-fill"></i>Get In Touch</h2>
-                <p class="lead "> Question To Ask</p>
-            </div>
-            <div class="row justify-content-center my-5">
-                <div class="col-lg-6">
-                    <form action="">
-                        <label class="form-label  fw-bold" for="email">Email Address:</label>
-                        <div class="mb-4 input-group">
-                            <span class="input-group-text bg-light">
-                                <i class="bi bi-envelope"></i> </span>
-                            <input type="email" id="email" class="form-control" placeholder="e.g. mario@example">
-                        </div>
-
-
-
-
-                        <div class="form-floating my-3">
-                            <input type="text" id="name" class="form-control" placeholder="e.g. Ehab Ehab">
-                            <label class="form-label fw-bold" for="name">Name :</label>
-
-                        </div>
-
-                        <label class="form-label  fw-bold" for="subject">What Is Your Question About? :</label>
-                        <div class="input-group">
-                            <span class="input-group-text bg-light">
-                                <i class="bi bi-chat-left-dots"></i>
-                            </span>
-                            <select id="subject" class="form-select">
-                                <option value="Pricing" selected>Pricing Query</option>
-                                <option value="content">Content Query</option>
-                                <option value="Other">Other Query</option>
-                            </select>
-                        </div>
-
-
-                        <div class="form-floating my-3">
-                            <textarea id="query" class="form-control" style="height: 150px;"></textarea>
-                            <label class="form-label  fw-bold" for="query">Your Query...</label>
-                        </div>
-
-                        <div class="text-center mb-4">
-                            <button type="submit" class="btn btn-secondary py-2 px-5" data-bs-toggle="tooltip"
-                                data-bs-placement="bottom" title="Click To Submit">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!---------------------- contact form -------------------------------------------->
-    <!---------------------- modal -------------------------------------------->
-    <section class="bg-light">
-        <div class="container">
-            <div class="text-center py-3">
-                <h2><i class="bi bi-eye"></i> Stay In The Loop</h2>
-                <p class="lead">Get The Last Updates</p>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center pb-4">
-                    <p class="muted">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat distinctio accusamus velit ex
-                        ullam doloremque? Nemo aliquam dolore officiis tenetur, blanditiis sunt voluptatum debitis
-                        corporis rerum, mollitia quae ratione iusto!
-                    </p>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal"
-                        data-bs-placement="right" title="Click for updates">
-                        Register For Updates
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div id="reg-modal" class="modal fade" tabindex=" -1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Get Last Updates</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis voluptates neque aliquam
-                        expedita, deleniti alias quod cumque, nemo voluptas, voluptate aperiam qui voluptatem nulla nam
-                        debitis quasi exercitationem. Tempora, odit.</p>
-                    <label for="modal-email" class="form-label">Your Email Address:</label>
-                    <input type="email" id="modal-email" class="form-control" placeholder="e.g. mario@example">
-                </div>
-                <div class="modal-footer ">
-                    <div class="text-center">
-                        <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                            title="Click To Submit">Submit</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-   
-    <!---------------------- modal-------------------------------------------->
-    <!---------------------- footer-------------------------------------------->
- <footer class="pt-3 bg-secondary">
+<section>
+    
     <div class="container">
-        <div class="social">
-      
-          <a href="#" class="icon">
-            <i class="bi bi-facebook"></i>
-          </a>
-          <a href="#" class="icon">
-            <i class="bi bi-youtube"></i>       
-           </a>
-          <a href="#" class="icon">
-            <i class="fab fa-codepen"></i>
-          </a>
-          <a href="#" class="icon">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-      </div>
- <p class="lead fw-bold text-center m-0 py-2"> All Copy Right By MT 2021</p>
- </footer>
-    <!---------------------- footer-------------------------------------------->
+        <div class="row">
+            <div class="col-4 col-md-4 col-sm-12">
+                <div class="sidebar">
+                    <div class="logo-content">
+                        <div class="logo">
+                            <i class="bx bxl-c-plus-plus"></i>
+                            <div class="logo-name fw-bold">CodingLab</div>
+                        </div>
+                        <i class='bx bx-menu' id="btn"></i>
+                    </div>
+                    <ul class="nav-list">
+                        <li data-bs-toggle="tooltip" data-bs-placement="right" title="search">
+                            <i class='bx bx-search'></i>
+                            <input type="text" placeholder="search...">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard">
+                            <a href="#">
+                                <i class='bx bx-grid-alt'></i>
+                                <span class="links-name">Dashboard</span>
+                            </a>
+                        </li>
 
-    <!---------------------- offcanvas-------------------------------------------->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-Label">
-        <div class="offcanvas-header">
-            <h3 id="sidebar-Label" class=" offcanvas-title">My Other BOOKS</h3>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos veniam voluptate quam natus
-                voluptatem,
-                laboriosam aliquid autem exercitationem magnam perferendis! Expedita perferendis non itaque autem
-                repellendus quisquam laboriosam ipsa magnam.</p>
-            <!-- dropdown -->
-            <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Choise Book Title
-                </button>
-                <ul class="dropdown-menu " aria-labelledby="book-dropdown">
-                    <li><a class="dropdown-item" href="#">React</a></li>
-                    <li><a class="dropdown-item" href="#">Vue.Js</a></li>
-                    <li><a class="dropdown-item" href="#">Node.js</a></li>
-                </ul>
+                        <li data-bs-toggle="tooltip" data-bs-placement="right" title="User">
+                            <a href="#">
+                                <i class='bx bx-user'></i>
+                                <span class="links-name">User</span>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="right" title="Chat">
+                            <a href="chat.html">
+                                <i class='bx bx-chat'></i>
+                                <span class="links-name">Chat</span>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="right" title="Analytics">
+                            <a href="chart.html">
+                                <i class='bx bxs-pie-chart-alt'></i>
+                                <span class="links-name">Analytics</span>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="right" title="File Manager">
+                            <a href="#">
+                                <i class='bx bx-folder'></i>
+                                <span class="links-name">File Manager</span>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="right" title="order">
+                            <a href="#">
+                                <i class='bx bx-cart'></i>
+                                <span class="links-name">order</span>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="right" title="Saved">
+                            <a href="#">
+                                <i class='bx bx-heart'></i>
+                                <span class="links-name">Saved</span>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="right" title="Setting">
+                            <a href="#">
+                                <i class='bx bx-cog'></i>
+                                <span class="links-name">Setting</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="profile-content text-primary text-center">
+                        <div class="profile">
+                            <div class=" profile-detials">
+                                <img src="./image/WhatsApp Image 2021-07-19 at 3.49.16 AM.jpeg" alt="">
+                                <div class="name-job">
+                                    <div class="name fw-bold"> Ali Ali</div>
+                                    <div class="job fw-light">Front-End</div>
+                                </div>
+                            </div>
+                            <i class='bx bx-log-out' id="log-out"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-md-8 col-sm-12">
+                <div class="home-content mb-4">
+                    <div class="texr">
+                        Home Content
+                    </div>
+                </div>
+                <section class="mt-4 pt-5">
+                    <div class="container">
+                        <div class="row">
+                            <table id="example" class="table table-borded display nowarp" cellspacing="0" width='50%'>
+                                <thead>
+                                    <tr>
+                                        <th>name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start Date</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011/04/25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011/07/25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009/01/12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cedric Kelly</td>
+                                        <td>Senior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2012/03/29</td>
+                                        <td>$433,060</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Airi Satou</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>33</td>
+                                        <td>2008/11/28</td>
+                                        <td>$162,700</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brielle Williamson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2012/12/02</td>
+                                        <td>$372,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Herrod Chandler</td>
+                                        <td>Sales Assistant</td>
+                                        <td>San Francisco</td>
+                                        <td>59</td>
+                                        <td>2012/08/06</td>
+                                        <td>$137,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rhona Davidson</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Tokyo</td>
+                                        <td>55</td>
+                                        <td>2010/10/14</td>
+                                        <td>$327,900</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Colleen Hurst</td>
+                                        <td>Javascript Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>39</td>
+                                        <td>2009/09/15</td>
+                                        <td>$205,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sonya Frost</td>
+                                        <td>Software Engineer</td>
+                                        <td>Edinburgh</td>
+                                        <td>23</td>
+                                        <td>2008/12/13</td>
+                                        <td>$103,600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jena Gaines</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>30</td>
+                                        <td>2008/12/19</td>
+                                        <td>$90,560</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Quinn Flynn</td>
+                                        <td>Support Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>22</td>
+                                        <td>2013/03/03</td>
+                                        <td>$342,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Charde Marshall</td>
+                                        <td>Regional Director</td>
+                                        <td>San Francisco</td>
+                                        <td>36</td>
+                                        <td>2008/10/16</td>
+                                        <td>$470,600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Haley Kennedy</td>
+                                        <td>Senior Marketing Designer</td>
+                                        <td>London</td>
+                                        <td>43</td>
+                                        <td>2012/12/18</td>
+                                        <td>$313,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tatyana Fitzpatrick</td>
+                                        <td>Regional Director</td>
+                                        <td>London</td>
+                                        <td>19</td>
+                                        <td>2010/03/17</td>
+                                        <td>$385,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Michael Silva</td>
+                                        <td>Marketing Designer</td>
+                                        <td>London</td>
+                                        <td>66</td>
+                                        <td>2012/11/27</td>
+                                        <td>$198,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Paul Byrd</td>
+                                        <td>Chief Financial Officer (CFO)</td>
+                                        <td>New York</td>
+                                        <td>64</td>
+                                        <td>2010/06/09</td>
+                                        <td>$725,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gloria Little</td>
+                                        <td>Systems Administrator</td>
+                                        <td>New York</td>
+                                        <td>59</td>
+                                        <td>2009/04/10</td>
+                                        <td>$237,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bradley Greer</td>
+                                        <td>Software Engineer</td>
+                                        <td>London</td>
+                                        <td>41</td>
+                                        <td>2012/10/13</td>
+                                        <td>$132,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dai Rios</td>
+                                        <td>Personnel Lead</td>
+                                        <td>Edinburgh</td>
+                                        <td>35</td>
+                                        <td>2012/09/26</td>
+                                        <td>$217,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jenette Caldwell</td>
+                                        <td>Development Lead</td>
+                                        <td>New York</td>
+                                        <td>30</td>
+                                        <td>2011/09/03</td>
+                                        <td>$345,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Yuri Berry</td>
+                                        <td>Chief Marketing Officer (CMO)</td>
+                                        <td>New York</td>
+                                        <td>40</td>
+                                        <td>2009/06/25</td>
+                                        <td>$675,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Caesar Vance</td>
+                                        <td>Pre-Sales Support</td>
+                                        <td>New York</td>
+                                        <td>21</td>
+                                        <td>2011/12/12</td>
+                                        <td>$106,450</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Doris Wilder</td>
+                                        <td>Sales Assistant</td>
+                                        <td>Sydney</td>
+                                        <td>23</td>
+                                        <td>2010/09/20</td>
+                                        <td>$85,600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Angelica Ramos</td>
+                                        <td>Chief Executive Officer (CEO)</td>
+                                        <td>London</td>
+                                        <td>47</td>
+                                        <td>2009/10/09</td>
+                                        <td>$1,200,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gavin Joyce</td>
+                                        <td>Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>42</td>
+                                        <td>2010/12/22</td>
+                                        <td>$92,575</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jennifer Chang</td>
+                                        <td>Regional Director</td>
+                                        <td>Singapore</td>
+                                        <td>28</td>
+                                        <td>2010/11/14</td>
+                                        <td>$357,650</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brenden Wagner</td>
+                                        <td>Software Engineer</td>
+                                        <td>San Francisco</td>
+                                        <td>28</td>
+                                        <td>2011/06/07</td>
+                                        <td>$206,850</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fiona Green</td>
+                                        <td>Chief Operating Officer (COO)</td>
+                                        <td>San Francisco</td>
+                                        <td>48</td>
+                                        <td>2010/03/11</td>
+                                        <td>$850,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shou Itou</td>
+                                        <td>Regional Marketing</td>
+                                        <td>Tokyo</td>
+                                        <td>20</td>
+                                        <td>2011/08/14</td>
+                                        <td>$163,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Michelle House</td>
+                                        <td>Integration Specialist</td>
+                                        <td>Sydney</td>
+                                        <td>37</td>
+                                        <td>2011/06/02</td>
+                                        <td>$95,400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Suki Burks</td>
+                                        <td>Developer</td>
+                                        <td>London</td>
+                                        <td>53</td>
+                                        <td>2009/10/22</td>
+                                        <td>$114,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Prescott Bartlett</td>
+                                        <td>Technical Author</td>
+                                        <td>London</td>
+                                        <td>27</td>
+                                        <td>2011/05/07</td>
+                                        <td>$145,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gavin Cortez</td>
+                                        <td>Team Leader</td>
+                                        <td>San Francisco</td>
+                                        <td>22</td>
+                                        <td>2008/10/26</td>
+                                        <td>$235,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Martena Mccray</td>
+                                        <td>Post-Sales support</td>
+                                        <td>Edinburgh</td>
+                                        <td>46</td>
+                                        <td>2011/03/09</td>
+                                        <td>$324,050</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Unity Butler</td>
+                                        <td>Marketing Designer</td>
+                                        <td>San Francisco</td>
+                                        <td>47</td>
+                                        <td>2009/12/09</td>
+                                        <td>$85,675</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Howard Hatfield</td>
+                                        <td>Office Manager</td>
+                                        <td>San Francisco</td>
+                                        <td>51</td>
+                                        <td>2008/12/16</td>
+                                        <td>$164,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hope Fuentes</td>
+                                        <td>Secretary</td>
+                                        <td>San Francisco</td>
+                                        <td>41</td>
+                                        <td>2010/02/12</td>
+                                        <td>$109,850</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vivian Harrell</td>
+                                        <td>Financial Controller</td>
+                                        <td>San Francisco</td>
+                                        <td>62</td>
+                                        <td>2009/02/14</td>
+                                        <td>$452,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Timothy Mooney</td>
+                                        <td>Office Manager</td>
+                                        <td>London</td>
+                                        <td>37</td>
+                                        <td>2008/12/11</td>
+                                        <td>$136,200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jackson Bradshaw</td>
+                                        <td>Director</td>
+                                        <td>New York</td>
+                                        <td>65</td>
+                                        <td>2008/09/26</td>
+                                        <td>$645,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Olivia Liang</td>
+                                        <td>Support Engineer</td>
+                                        <td>Singapore</td>
+                                        <td>64</td>
+                                        <td>2011/02/03</td>
+                                        <td>$234,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bruno Nash</td>
+                                        <td>Software Engineer</td>
+                                        <td>London</td>
+                                        <td>38</td>
+                                        <td>2011/05/03</td>
+                                        <td>$163,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sakura Yamamoto</td>
+                                        <td>Support Engineer</td>
+                                        <td>Tokyo</td>
+                                        <td>37</td>
+                                        <td>2009/08/19</td>
+                                        <td>$139,575</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thor Walton</td>
+                                        <td>Developer</td>
+                                        <td>New York</td>
+                                        <td>61</td>
+                                        <td>2013/08/11</td>
+                                        <td>$98,540</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Finn Camacho</td>
+                                        <td>Support Engineer</td>
+                                        <td>San Francisco</td>
+                                        <td>47</td>
+                                        <td>2009/07/07</td>
+                                        <td>$87,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Serge Baldwin</td>
+                                        <td>Data Coordinator</td>
+                                        <td>Singapore</td>
+                                        <td>64</td>
+                                        <td>2012/04/09</td>
+                                        <td>$138,575</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zenaida Frank</td>
+                                        <td>Software Engineer</td>
+                                        <td>New York</td>
+                                        <td>63</td>
+                                        <td>2010/01/04</td>
+                                        <td>$125,250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zorita Serrano</td>
+                                        <td>Software Engineer</td>
+                                        <td>San Francisco</td>
+                                        <td>56</td>
+                                        <td>2012/06/01</td>
+                                        <td>$115,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jennifer Acosta</td>
+                                        <td>Junior Javascript Developer</td>
+                                        <td>Edinburgh</td>
+                                        <td>43</td>
+                                        <td>2013/02/01</td>
+                                        <td>$75,650</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cara Stevens</td>
+                                        <td>Sales Assistant</td>
+                                        <td>New York</td>
+                                        <td>46</td>
+                                        <td>2011/12/06</td>
+                                        <td>$145,600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hermione Butler</td>
+                                        <td>Regional Director</td>
+                                        <td>London</td>
+                                        <td>47</td>
+                                        <td>2011/03/21</td>
+                                        <td>$356,250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lael Greer</td>
+                                        <td>Systems Administrator</td>
+                                        <td>London</td>
+                                        <td>21</td>
+                                        <td>2009/02/27</td>
+                                        <td>$103,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jonas Alexander</td>
+                                        <td>Developer</td>
+                                        <td>San Francisco</td>
+                                        <td>30</td>
+                                        <td>2010/07/14</td>
+                                        <td>$86,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shad Decker</td>
+                                        <td>Regional Director</td>
+                                        <td>Edinburgh</td>
+                                        <td>51</td>
+                                        <td>2008/11/13</td>
+                                        <td>$183,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Michael Bruce</td>
+                                        <td>Javascript Developer</td>
+                                        <td>Singapore</td>
+                                        <td>29</td>
+                                        <td>2011/06/27</td>
+                                        <td>$183,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Donna Snider</td>
+                                        <td>Customer Support</td>
+                                        <td>New York</td>
+                                        <td>27</td>
+                                        <td>2011/01/25</td>
+                                        <td>$112,000</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start Date</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
-    <!---------------------- offcanvas-------------------------------------------->
+    </section>
 
 
 
-    <!-- /*  scroll-up  */ -->
-    <script>
-        var btn = $('#button');
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 300) {
-                console.log('btn');
-                btn.addClass('show');
-            } else {
-                btn.removeClass('show');
-            }
-        });
-        btn.on('click', function (e) {
-            e.preventDefault();
-            $('html, body').animate({ scrollTop: 0 }, '300');
-        });
-    </script>
-    <!-- /*  scroll-up  */ -->
-    <!-- Navbar -->
-    <script>
-        let navBar = document.querySelector('.navbar');
-        let itemBar = document.querySelector('.nav-item');
-        window.onscroll = function () {
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                navBar.classList.add('navbar-light', 'trasprant', 'shadow-lg', 'text-secondary');
-                navBar.classList.remove('bg-primary', 'navbar-dark');
-                // itemBar.classList.add
-            } else {
-                navBar.classList.remove('navbar-light', 'trasprant', 'shadow-lg', 'text-secondary');
-                navBar.classList.add('bg-primary', 'navbar-dark');
-                // itemBar.classList.remove('transform');
-            }
-        }
-    </script>
-    <!-- Navbar -->
-    <!-- active card -->
-    <script>
 
-        let price = document.getElementById('pricing');
-        let card = price.getElementsByClassName('card');
 
-        for (let i = 0; i < card.length; i++) {
-            card[i].addEventListener('click', function () {
-                let activeCart = document.getElementsByClassName('active-price');
-                activeCart[0].className = activeCart[0].className.replace(' active-price', '');
-                this.className += " active-price";
-            });
-        }
 
-    </script>
-    <!-- active card -->
-    <!-- tooltips -->
+
+
+
+    <!-- tooltip -->
     <script>
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
     </script>
-    <!-- tooltips -->
-    <!-- Initialize Swiper -->
+    <!-- tooltip -->
+    <!-- data-tabel -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            breakpoints: {
-                300: {
-                    slidesPerView: 1,
-                    slidesPerGroup: 1,
-                },
-
-                768: {
-                    slidesPerView: 2,
-                    slidesPerGroup: 1,
-                },
-
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                    slidesPerGroup: 3,
-                },
-            },
-            loop: true,
-            loopFillGroupWithBlank: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            // navigation: {
-            //     nextEl: ".swiper-button-next",
-            //     prevEl: ".swiper-button-prev",
-            // },
+        $(document).ready(function () {
+            $('#example').DataTable({
+                responsive: true
+            });
         });
     </script>
-    <!-- Initialize Swiper -->
+    <!-- data-tabel -->
     <script>
-        AOS.init();
-    </script>
-</body>
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar');
+        let searchBtn = document.querySelector('.bx-search');
 
+        btn.onclick = function () {
+            sidebar.classList.toggle('active');
+        }
+        searchBtn.onclick = function () {
+            sidebar.classList.toggle('active');
+        }
+    </script>
+
+</body>
 </html>
